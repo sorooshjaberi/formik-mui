@@ -24,9 +24,9 @@
     /* NPM publish */
     "typeRoots": ["./dist/index.d.ts", "node_modules/@types"],
 
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

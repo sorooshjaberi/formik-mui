@@ -3,7 +3,7 @@ import { TextField, TextFieldProps, useTheme } from "@mui/material";
 import { useMemo } from "react";
 import LoadingAdornment from "../Labels/LoadingAdornment";
 import {} from "react-number-format";
-import NotAffectedRtl from "@/components/NotAffectedRtl";
+import NotAffectedRtl from "../../../components/NotAffectedRtl";
 
 type Props = TextFieldProps & {
   notAffectedRtl?: boolean;

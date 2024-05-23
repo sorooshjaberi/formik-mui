@@ -1,8 +1,7 @@
 import { FormikProps } from "formik";
 import { ComponentProps, FC } from "react";
 import { TextFieldWithLabel } from "./TextFieldWithLabel";
-// import { WithRequired } from "models/utilTypes";
-import { WithRequired } from "@/models/utilTypes";
+import { WithRequired } from "../../../models/utilTypes";
 
 export type TextFieldWithFormikProps = WithRequired<
   ComponentProps<typeof TextFieldWithLabel>,

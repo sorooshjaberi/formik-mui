@@ -2,8 +2,8 @@ import { Autocomplete, MenuItem, useTheme } from "@mui/material";
 import clsx from "clsx";
 import { ComponentProps, ReactNode, useCallback } from "react";
 import { CustomTextField } from "../TexFields/CustomTextField";
-import NotAffectedRtl from "@/components/NotAffectedRtl";
-import { PartialKey } from "@/models/utilTypes";
+import NotAffectedRtl from "../../../components/NotAffectedRtl";
+import { PartialKey } from "../../../models/utilTypes";
 import LoadingAdornment from "../Labels/LoadingAdornment";
 import { VirtualizedList } from "./VirtualizedList";
 

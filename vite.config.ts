@@ -24,9 +24,9 @@ export default defineConfig({
     emptyOutDir: true,
   },
 
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "/src"),
-    },
-  },
+  // resolve: {
+  //   alias: {
+  //     "@": path.resolve(__dirname, "/src"),
+  //   },
+  // },
 });

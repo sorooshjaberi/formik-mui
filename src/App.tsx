@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import LocalizationProvider from "@/components/Inputs/DatePickers/LocalizationProvider";
+import LocalizationProvider from "./components/Inputs/DatePickers/LocalizationProvider";
 import {
   CustomDatePicker,
   CustomTextField,
@@ -7,7 +7,7 @@ import {
   SelectBoxWithFormik,
   TextFieldWithFormik,
   TextFieldWithLabel,
-} from "@/components/Inputs";
+} from "./components/Inputs";
 import { Box } from "@mui/material";
 
 function App() {

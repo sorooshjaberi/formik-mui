@@ -1,4 +1,4 @@
-import { WithRequired } from "@/models/utilTypes";
+import { WithRequired } from "../../../models/utilTypes";
 import { ComponentProps } from "react";
 import { SelectBoxWithLabel } from "./SelectBoxWithLabel";
 import { FormikProps } from "formik";
