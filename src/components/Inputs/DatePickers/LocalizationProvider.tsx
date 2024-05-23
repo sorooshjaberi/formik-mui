@@ -1,13 +1,26 @@
 import { FC, PropsWithChildren } from "react";
-import { LocalizationProvider as MuiLocalizationProvider } from "@mui/x-date-pickers";
+import {
+  LocalizationProviderProps as MuiLocalizationProviderProps,
+  LocalizationProvider as MuiLocalizationProvider,
+} from "@mui/x-date-pickers";
 import { AdapterDateFnsJalali } from "@mui/x-date-pickers/AdapterDateFnsJalali";
 
-const LocalizationProvider: FC<PropsWithChildren> = ({ children }) => {
+export type LocalizationProviderProps = PropsWithChildren<
+  MuiLocalizationProviderProps<any, unknown>
+>;
+
+const LocalizationProvider: FC<LocalizationProviderProps> = ({
+  children,
+  ...otherProps
+}) => {
   return (
-    <MuiLocalizationProvider adapterLocale={AdapterDateFnsJalali}>
+    <MuiLocalizationProvider
+      adapterLocale={AdapterDateFnsJalali}
+      {...otherProps}
+    >
       {children}
     </MuiLocalizationProvider>
   );
 };
 
-export default LocalizationProvider;
+export { LocalizationProvider };
