@@ -7,4 +7,4 @@ const Currency = (props: Props) => {
   return <Typography p={2}>{currency}</Typography>;
 };
 
-export default Currency;
+export { Currency };

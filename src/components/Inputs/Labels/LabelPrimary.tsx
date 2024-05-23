@@ -1,6 +1,6 @@
 import { Typography, TypographyProps } from "@mui/material";
 import clsx from "clsx";
-import RequiredAstrics from "./RequiredAstrics";
+import { RequiredAstrics } from "./RequiredAstrics";
 
 type Props = TypographyProps<"label"> & {
   required?: boolean;
@@ -16,7 +16,7 @@ const LabelPrimary = (props: Props) => {
       {...props}
       className={clsx(
         "!mb-1 inline-block cursor-pointer select-none",
-        props?.className,
+        props?.className
       )}
     >
       {props.children}
@@ -25,4 +25,4 @@ const LabelPrimary = (props: Props) => {
   );
 };
 
-export default LabelPrimary;
+export { LabelPrimary };

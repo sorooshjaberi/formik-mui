@@ -1,7 +1,7 @@
 import { ComponentProps } from "react";
 import { CustomDatePicker } from "./CustomDatePicker";
 import { BoxProps, Box } from "@mui/material";
-import LabelPrimary from "../Labels/LabelPrimary";
+import { LabelPrimary } from "../Labels/LabelPrimary";
 
 type Props = ComponentProps<typeof CustomDatePicker> & {
   label?: string;

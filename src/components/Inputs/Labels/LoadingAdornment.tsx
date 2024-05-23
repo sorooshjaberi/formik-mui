@@ -1,6 +1,5 @@
 import { Box, CircularProgress, CircularProgressProps } from "@mui/material";
 
-
 type Props = CircularProgressProps;
 
 const LoadingAdornment = (props: Props) => {
@@ -11,4 +10,4 @@ const LoadingAdornment = (props: Props) => {
   );
 };
 
-export default LoadingAdornment;
+export { LoadingAdornment };

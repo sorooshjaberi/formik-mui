@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
 import { TextField, TextFieldProps, useTheme } from "@mui/material";
 import { useMemo } from "react";
-import LoadingAdornment from "../Labels/LoadingAdornment";
-import {} from "react-number-format";
+import {LoadingAdornment} from "../Labels/LoadingAdornment";
 import NotAffectedRtl from "../../../components/NotAffectedRtl";
 
 type Props = TextFieldProps & {

@@ -4,7 +4,7 @@ import { ComponentProps, ReactNode, useCallback } from "react";
 import { CustomTextField } from "../TexFields/CustomTextField";
 import NotAffectedRtl from "../../../components/NotAffectedRtl";
 import { PartialKey } from "../../../models/utilTypes";
-import LoadingAdornment from "../Labels/LoadingAdornment";
+import { LoadingAdornment } from "../Labels/LoadingAdornment";
 import { VirtualizedList } from "./VirtualizedList";
 
 export type CustomSelectBoxItem = {

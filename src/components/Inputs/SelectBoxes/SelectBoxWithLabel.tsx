@@ -1,7 +1,7 @@
 import { Box, BoxProps } from "@mui/material";
 import { ComponentProps } from "react";
-import LabelPrimary from "../Labels/LabelPrimary";
-import {CustomSelectBox} from "./CustomSelectBox";
+import { LabelPrimary } from "../Labels/LabelPrimary";
+import { CustomSelectBox } from "./CustomSelectBox";
 
 type Props = ComponentProps<typeof CustomSelectBox> & {
   label?: string;

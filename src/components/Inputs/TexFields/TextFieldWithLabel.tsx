@@ -1,7 +1,7 @@
 import { Box, BoxProps } from "@mui/material";
 import { ComponentProps, ReactNode } from "react";
 import { CustomTextField } from "./CustomTextField";
-import LabelPrimary from "../Labels/LabelPrimary";
+import { LabelPrimary } from "../Labels/LabelPrimary";
 
 type Props = {
   label?: ReactNode;
