@@ -3,13 +3,14 @@ import { ComponentProps, ReactNode } from "react";
 import { CustomTextField } from "./CustomTextField";
 import { LabelPrimary } from "../Labels/LabelPrimary";
 
-type Props = {
+export type TextFieldWithLabelProps = {
   label?: ReactNode;
   labelProps?: ComponentProps<typeof LabelPrimary>;
   containerProps?: BoxProps;
   enableInternalLable?: boolean;
 } & Omit<ComponentProps<typeof CustomTextField>, "label">;
-const TextFieldWithLabel = (props: Props) => {
+
+const TextFieldWithLabel = (props: TextFieldWithLabelProps) => {
   const {
     label,
     labelProps,

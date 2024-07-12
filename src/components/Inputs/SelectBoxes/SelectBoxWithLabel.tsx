@@ -3,14 +3,14 @@ import { ComponentProps } from "react";
 import { LabelPrimary } from "../Labels/LabelPrimary";
 import { CustomSelectBox } from "./CustomSelectBox";
 
-type Props = ComponentProps<typeof CustomSelectBox> & {
+type SelectBoxWithLabelProps = ComponentProps<typeof CustomSelectBox> & {
   label?: string;
   labelProps?: ComponentProps<typeof LabelPrimary>;
   containerProps?: BoxProps;
   enableInternalLable?: boolean;
 };
 
-const SelectBoxWithLabel = (props: Props) => {
+const SelectBoxWithLabel = (props: SelectBoxWithLabelProps) => {
   const {
     label,
     labelProps,
@@ -37,4 +37,4 @@ const SelectBoxWithLabel = (props: Props) => {
   );
 };
 
-export { SelectBoxWithLabel };
+export { SelectBoxWithLabel , type SelectBoxWithLabelProps};

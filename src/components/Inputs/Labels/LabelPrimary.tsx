@@ -2,11 +2,11 @@ import { Typography, TypographyProps } from "@mui/material";
 import clsx from "clsx";
 import { RequiredAstrics } from "./RequiredAstrics";
 
-type Props = TypographyProps<"label"> & {
+type LabelPrimaryProps = TypographyProps<"label"> & {
   required?: boolean;
 };
 
-const LabelPrimary = (props: Props) => {
+const LabelPrimary = (props: LabelPrimaryProps) => {
   const { required } = props;
   return (
     <Typography
@@ -25,4 +25,4 @@ const LabelPrimary = (props: Props) => {
   );
 };
 
-export { LabelPrimary };
+export { LabelPrimary, type LabelPrimaryProps };

@@ -2,7 +2,7 @@ import { styled, useTheme } from "@mui/material";
 import { DatePicker, DatePickerProps } from "@mui/x-date-pickers";
 import { ComponentProps, FC, useMemo, useState } from "react";
 import { CustomTextField } from "../TexFields/CustomTextField";
-import MemoizedLocalizationProvider from "./lib/MemoizedLocalizationProvider";
+import LocalizationProvider from "./lib/MemoizedLocalizationProvider";
 import ActionBar from "./ActionBar";
 
 export type CustomDatePickerProps = DatePickerProps<any> & {
@@ -53,7 +53,7 @@ const CustomDatePicker: FC<CustomDatePickerProps> = (props) => {
   const onOpen = () => setOpen(true);
 
   return (
-    <MemoizedLocalizationProvider>
+    <LocalizationProvider>
       <StyledDatePicker
         open={open}
         ///@ts-ignore
@@ -82,7 +82,7 @@ const CustomDatePicker: FC<CustomDatePickerProps> = (props) => {
           ...datePickerProps.slots,
         }}
       />
-    </MemoizedLocalizationProvider>
+    </LocalizationProvider>
   );
 };
 

@@ -6,12 +6,12 @@ import {
 import { ReactNode } from "react";
 import { CustomDatePickerProps } from "./CustomDatePicker";
 
-type Props = PickersActionBarProps & {
+export type ActionBarProps = PickersActionBarProps & {
   datePickerProps: CustomDatePickerProps;
   onClose: () => void;
 };
 
-const ActionBar = ({ datePickerProps, onClose, ...props }: Props) => {
+const ActionBar = ({ datePickerProps, onClose, ...props }: ActionBarProps) => {
   const componentsMapper: Record<
     PickersActionBarAction,
     { content: ReactNode; onClick(): void }

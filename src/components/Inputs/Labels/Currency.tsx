@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 
-type Props = { currency?: string };
+type CurrencyProps = { currency?: string };
 
-const Currency = (props: Props) => {
+const Currency = (props: CurrencyProps) => {
   const { currency = "ریال" } = props;
   return <Typography p={2}>{currency}</Typography>;
 };
 
-export { Currency };
+export { Currency , type CurrencyProps};

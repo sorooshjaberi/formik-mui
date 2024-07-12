@@ -3,14 +3,14 @@ import { CustomDatePicker } from "./CustomDatePicker";
 import { BoxProps, Box } from "@mui/material";
 import { LabelPrimary } from "../Labels/LabelPrimary";
 
-type Props = ComponentProps<typeof CustomDatePicker> & {
+type DatePickerWithLabelProps = ComponentProps<typeof CustomDatePicker> & {
   label?: string;
   labelProps?: ComponentProps<typeof LabelPrimary>;
   containerProps?: BoxProps;
   enableInternalLable?: boolean;
 };
 
-const DatePickerWithLabel = (props: Props) => {
+const DatePickerWithLabel = (props: DatePickerWithLabelProps) => {
   const {
     label,
     labelProps,
@@ -34,4 +34,4 @@ const DatePickerWithLabel = (props: Props) => {
   );
 };
 
-export { DatePickerWithLabel };
+export { DatePickerWithLabel, type DatePickerWithLabelProps };

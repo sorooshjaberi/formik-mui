@@ -3,7 +3,7 @@ import { FC } from "react";
 import { NumericFormat, NumericFormatProps } from "react-number-format";
 import { CoreTextField } from "./CoreTextField";
 
-type CustomTextFieldProps = TextFieldProps & {
+export type CustomTextFieldProps = TextFieldProps & {
   notAffectedRtl?: boolean;
   loading?: boolean;
   seperateThousands?: boolean;

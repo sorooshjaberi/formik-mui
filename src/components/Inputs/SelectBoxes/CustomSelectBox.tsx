@@ -12,7 +12,7 @@ export type CustomSelectBoxItem = {
   label: ReactNode;
 } & Record<string, any>;
 
-type Props = PartialKey<
+type CustomSelectBoxProps = PartialKey<
   ComponentProps<typeof Autocomplete<CustomSelectBoxItem, any, any, any, any>>,
   "renderInput"
 > & {
@@ -35,7 +35,7 @@ type Props = PartialKey<
   ): void;
 };
 
-const CustomSelectBox = (props: Props) => {
+const CustomSelectBox = (props: CustomSelectBoxProps) => {
   const {
     textFieldProps,
     name,
@@ -156,4 +156,4 @@ const CustomSelectBox = (props: Props) => {
   return autoComplete;
 };
 
-export { CustomSelectBox };
+export { CustomSelectBox , type CustomSelectBoxProps};

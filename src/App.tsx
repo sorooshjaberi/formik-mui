@@ -8,17 +8,18 @@ import {
   TextFieldWithFormik,
   TextFieldWithLabel,
 } from "./components/Inputs";
-import { Box } from "@mui/material";
+import { Stack } from "@mui/material";
+import { CheckboxWithFormik } from "./components/Inputs/Checkboxs";
 
 function App() {
   const formik = useFormik({
-    initialValues: { name: "" },
-    onSubmit() {},
+    initialValues: { name: "", consent: "" },
+    onSubmit() { },
   });
 
   return (
     <LocalizationProvider>
-      <Box width="400px">
+      <Stack spacing={2} width="400px">
         <TextFieldWithFormik
           enableInternalLable
           label="Name"
@@ -48,7 +49,8 @@ function App() {
           virtualize
           enableInternalLable
         />
-      </Box>
+      </Stack>
+      <CheckboxWithFormik formik={formik} name="consent" label="heheheheh" />
     </LocalizationProvider>
   );
 }

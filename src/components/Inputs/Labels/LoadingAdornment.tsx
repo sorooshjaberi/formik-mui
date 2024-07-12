@@ -1,8 +1,8 @@
 import { Box, CircularProgress, CircularProgressProps } from "@mui/material";
 
-type Props = CircularProgressProps;
+type LoadingAdornmentProps = CircularProgressProps;
 
-const LoadingAdornment = (props: Props) => {
+const LoadingAdornment = (props: LoadingAdornmentProps) => {
   return (
     <Box className="flex items-center justify-center p-5 h-full">
       <CircularProgress color="inherit" size={18} {...props} />
@@ -10,4 +10,4 @@ const LoadingAdornment = (props: Props) => {
   );
 };
 
-export { LoadingAdornment };
+export { LoadingAdornment , type LoadingAdornmentProps};

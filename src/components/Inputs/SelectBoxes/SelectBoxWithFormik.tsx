@@ -3,11 +3,11 @@ import { ComponentProps } from "react";
 import { SelectBoxWithLabel } from "./SelectBoxWithLabel";
 import { FormikProps } from "formik";
 import formikUrlValueResolver from "./utils/urlInjectionHelper";
-type Props = WithRequired<ComponentProps<typeof SelectBoxWithLabel>, "name"> & {
+type SelectBoxWithFormikProps = WithRequired<ComponentProps<typeof SelectBoxWithLabel>, "name"> & {
   formik: FormikProps<any>;
 };
 
-const SelectBoxWithFormik = (props: Props) => {
+const SelectBoxWithFormik = (props: SelectBoxWithFormikProps) => {
   const { formik, ...selectBoxProps } = props;
   const name = selectBoxProps.name;
 
@@ -57,4 +57,4 @@ const SelectBoxWithFormik = (props: Props) => {
   );
 };
 
-export { SelectBoxWithFormik };
+export { SelectBoxWithFormik, type SelectBoxWithFormikProps };
